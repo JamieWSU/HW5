@@ -47,8 +47,8 @@ int  processFile(FILE *fp, char **lines, int num_lines) {
     int min_idx=-1;
     int min_score=101;
 
-    // I num_lines and subtracted the error_coutn value, so the number of lines checked is updated
-    for( int i=0; i<num_lines -error_count; ++i ) {
+    // I subtracted num_lines and the error_count values, so the number of lines checked is updated
+    for( int i=0; i<num_lines - error_count; ++i ) {
         sum+=scores[i];
 
         if( scores[i] > max_score ) {
